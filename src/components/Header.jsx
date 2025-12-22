@@ -13,6 +13,22 @@ const Header = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Theme Logic
+    const [theme, setTheme] = useState('light');
+
+    useEffect(() => {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        setTheme(savedTheme);
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }, []);
+
+    const toggleTheme = () => {
+        const newTheme = theme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    };
+
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
@@ -27,8 +43,8 @@ const Header = () => {
                         <li><a href="#contact" className="nav-link" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
                     </ul>
                 </nav>
-                <button className="theme-toggle" aria-label="Toggle theme">
-                    <span className="icon">☀</span>
+                <button className="theme-toggle" aria-label="Toggle theme" onClick={toggleTheme}>
+                    <span className="icon">{theme === 'light' ? '⏾' : '☀'}</span>
                 </button>
                 <button
                     className={`mobile-menu-btn ${isMenuOpen ? 'active' : ''}`}

@@ -2,19 +2,19 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: "Project One",
-            description: "A mobile application for managing tasks.",
-            tags: ["React Native", "Firebase"],
-            image: "https://via.placeholder.com/600x400?text=Project+1",
+            title: "SharedSpace",
+            description: "A mobile application for roommates.",
+            tags: ["Kotlin", "Jetpack Compose", "Firebase"],
+            image: "/images/sharedspace-thumbnail.jpg",
             link: "#"
         },
         {
             id: 2,
-            title: "Project Two",
-            description: "Personal portfolio website.",
-            tags: ["HTML", "CSS", "JS"],
-            image: "https://via.placeholder.com/600x400?text=Project+2",
-            link: "#"
+            title: "Adopt-a-Tree",
+            description: "A website for appreciating urban forestry.",
+            tags: ["HTML", "CSS", "JS", "React", "Node.js"],
+            image: "/images/adoptatree-thumbnail.jpg",
+            link: "https://cs571-f25.github.io/p194/#/"
         },
         // {
         //     id: 3,
@@ -44,7 +44,7 @@ const Projects = () => {
                                         <span key={index} className="tag">{tag}</span>
                                     ))}
                                 </div>
-                                <a href={project.link} className="project-link">View Project &rarr;</a>
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">View Project &rarr;</a>
                             </div>
                         </article>
                     ))}
