@@ -5,7 +5,7 @@ const Projects = () => {
             title: "SharedSpace",
             description: "A mobile application for roommates.",
             tags: ["Kotlin", "Jetpack Compose", "Firebase"],
-            image: "/images/sharedspace-thumbnail.jpg",
+            image: "./images/sharedspace-thumbnail.jpg",
             link: "#"
         },
         {
@@ -13,7 +13,7 @@ const Projects = () => {
             title: "Adopt-a-Tree",
             description: "A website for appreciating urban forestry.",
             tags: ["HTML", "CSS", "JS", "React", "Node.js"],
-            image: "/images/adoptatree-thumbnail.jpg",
+            image: "./images/adoptatree-thumbnail.jpg",
             link: "https://cs571-f25.github.io/p194/#/"
         },
         // {
