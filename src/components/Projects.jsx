@@ -15,15 +15,7 @@ const Projects = () => {
             tags: ["HTML", "CSS", "JS", "React", "Node.js"],
             image: "./images/adoptatree-thumbnail.jpg",
             link: "https://ytingchang.github.io/adopt-a-tree/"
-        },
-        // {
-        //     id: 3,
-        //     title: "Project Three",
-        //     description: "Python automation script.",
-        //     tags: ["Python", "Selenium"],
-        //     image: "https://via.placeholder.com/600x400?text=Project+3",
-        //     link: "#"
-        // }
+        }
     ];
 
     return (

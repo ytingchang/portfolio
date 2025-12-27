@@ -39,6 +39,7 @@ const Header = () => {
                     <ul className="nav-list">
                         <li><a href="#hero" className="nav-link" onClick={() => setIsMenuOpen(false)}>Home</a></li>
                         <li><a href="#projects" className="nav-link" onClick={() => setIsMenuOpen(false)}>Projects</a></li>
+                        <li><a href="#design" className="nav-link" onClick={() => setIsMenuOpen(false)}>Design</a></li>
                         <li><a href="#about" className="nav-link" onClick={() => setIsMenuOpen(false)}>About</a></li>
                         <li><a href="#contact" className="nav-link" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
                     </ul>
