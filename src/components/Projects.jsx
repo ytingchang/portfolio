@@ -6,7 +6,7 @@ const Projects = () => {
             description: "A mobile application for roommates.",
             tags: ["Kotlin", "Jetpack Compose", "Firebase"],
             image: "./images/sharedspace-thumbnail.jpg",
-            link: "#"
+            link: "https://drive.google.com/file/d/1uX3aPHPRHha6zAh7RgvQbeXF1imn72wS/view?usp=sharing"
         },
         {
             id: 2,
@@ -14,7 +14,7 @@ const Projects = () => {
             description: "A website for appreciating urban forestry.",
             tags: ["HTML", "CSS", "JS", "React", "Node.js"],
             image: "./images/adoptatree-thumbnail.jpg",
-            link: "https://cs571-f25.github.io/p194/#/"
+            link: "https://ytingchang.github.io/adopt-a-tree/"
         },
         // {
         //     id: 3,
