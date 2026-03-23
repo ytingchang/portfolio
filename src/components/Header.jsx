@@ -14,7 +14,7 @@ const Header = () => {
     }, []);
 
     // Theme Logic
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState('dark'); // Default to dark theme
 
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme') || 'dark';
